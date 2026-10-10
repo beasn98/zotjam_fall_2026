@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://wjbr8pg3lnct"]
+
+[ext_resource type="Script" uid="uid://dkb5gvnrqrh5w" path="res://main_level.gd" id="1_6614m"]
+[ext_resource type="Texture2D" uid="uid://c1px1pibqbfge" path="res://Screenshot 2026-05-29 at 1.24.23 PM.png" id="2_bhu08"]
+
+[sub_resource type="Curve2D" id="Curve2D_05as6"]
+
+[node name="MainLevel" type="Node2D" unique_id=758802961]
+script = ExtResource("1_6614m")
+
+[node name="PaintResults" type="Node2D" parent="." unique_id=1768963783]
+
+[node name="TargetPreview" type="Sprite2D" parent="." unique_id=1652710300]
+modulate = Color(0.29411766, 0.29411766, 0.29411766, 0.29411766)
+position = Vector2(576, 324)
+scale = Vector2(0.19964029, 0.20431212)
+texture = ExtResource("2_bhu08")
+
+[node name="TargetShape" type="Path2D" parent="." unique_id=1152190001]
+curve = SubResource("Curve2D_05as6")
+
+[node name="PlayerTape" type="Line2D" parent="." unique_id=1048219249]
+
+[node name="Cursor" type="CharacterBody2D" parent="." unique_id=2128218926]
